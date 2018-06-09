@@ -23,6 +23,7 @@
 
 
 /*GLobal*/
+.brd-blue{border: 3px solid #154065;}
 a{text-decoration: none !important;}
 .opacity{opacity: .6;}
 
@@ -34,6 +35,7 @@ a{text-decoration: none !important;}
 .bg-black{background-color: #000000;}
 .bg-blue{background-color: #154065;}
 .bg-darkgray{background-color: #0c0c0b;}
+.bg-white{background-color: #ffffff}
 /*margin & pading*/
 .mg0{
 	margin: 0%;
