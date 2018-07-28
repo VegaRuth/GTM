@@ -10,6 +10,8 @@
         <!--css-->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/utilities.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/mediaqueries.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
         
         <!--owl_carousel-->
         <!--<link rel="stylesheet" href="css/owl_carousel/docs.theme.min.css">-->
@@ -29,15 +31,17 @@
     
     <body>
         <header class="bg-darkgray">
-            <nav class="navbar navbar-expand-lg navbar-dark mx-auto">
-                <a class="navbar-brand" href="index.html"><img src="img/GTM-logo.png" class="w50"></a>
-                
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse mx-auto" id="navbarColor01">
-                  <ul class="navbar-nav mx-auto">
+            <nav class="navbar navbar-dark bg-darkgray">
+              <a class="navbar-brand w40 mr-0" href="index.html"><img src="img/GTM-logo.png" class="w80"></a>
+              <form class="form-inline w60">
+                <input class="form-control w-75" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-primary bg-blue" type="submit"><i class="fas fa-search"></i></button>
+              </form>
+              <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarsExample01">
+                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item active">
                       <a class="nav-link" href="index.html">Inicio</a>
                     </li>
@@ -57,12 +61,7 @@
                       <a class="nav-link" href="visasyembajadas.html">Visas y Embajadas</a>
                     </li>
                   </ul>
-                </div>
-                <div class="form-inline">
-                    <a href="https://www.viajesbojorquez.com.mx/">
-                        <img src="img/bojorquez-logo.png" class="w50 float-right">
-                    </a>
-                </div>
+              </div>-->
             </nav>
             <!-- Filtros -->
             <nav class="navbar navbar-expand bg-blue mx-auto">
@@ -778,6 +777,40 @@
         <footer>
             <div class="container-fluid bg-darkgray">
                 <div class="row pd2">
+                    <div class="col-12 bg-darkgray">
+
+                        <p class="text-right">
+                          <button class="btn bg-blue" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                             <span class="fas fa-angle-down text-white" aria-hidden="true"></span>
+                          </button>
+                        </p>
+                        <div class="collapse bg-darkgray" id="collapseExample">
+                          <div class="card card-body text-right bg-darkgray pd0">
+                               <nav class="navbar-dark">
+                                <ul class="navbar-nav">
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Inicio</a>
+                                  </li>
+                                  <li class="nav-item">
+                                  <a class="nav-link" href="lada.html">Claves LADA</a>
+                                  </li>
+                                  <li class="nav-item">
+                                  <a class="nav-link" href="cp.html">Códigos Postales</a>
+                                  </li>
+                                  <li class="nav-item">
+                                  <a class="nav-link" href="mapas.html">Mapas</a>
+                                   </li>
+                                  <li class="nav-item">
+                                  <a class="nav-link" href="trazaturuta.html">Traza tu ruta</a>
+                                  </li>
+                                  <li class="nav-item">
+                                  <a class="nav-link" href="visasyembajadas.html">Visas y Embajadas</a>
+                                  </li>
+                                </ul>
+                               </nav>
+                          </div>
+                        </div>
+                    </div>
                     <div class="col-12 col-sm-3">
                         <nav class="navbar-dark">
                             <ul class="navbar-nav">
@@ -789,7 +822,7 @@
                     </div>
                     <div class="col-12 col-sm-6"></div>
                     <div class="col-12 col-sm-3">
-                        <nav class="navbar-dark">
+                        <nav class="navbar-dark text-right">
                             <ul class="navbar-nav">
                               <li class="nav-item">
                                 <a class="nav-link" href="avisoprivacidad.html">Aviso de privacidad</a>

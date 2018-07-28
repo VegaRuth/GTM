@@ -10,6 +10,8 @@
         <!--css-->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/utilities.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/mediaqueries.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
         <!--owl_carousel-->
         <link rel="stylesheet" href="css/owl_carousel/owl.carousel.min.css">
         <link rel="stylesheet" href="css/owl_carousel/owl.theme.default.min.css">
@@ -26,15 +28,17 @@
     
     <body>
         <header class="bg-darkgray">
-            <nav class="navbar navbar-expand-lg navbar-dark mx-auto">
-                <a class="navbar-brand" href="index.html"><img src="img/GTM-logo.png" class="w50"></a>
-                
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse mx-auto" id="navbarColor01">
-                  <ul class="navbar-nav mx-auto">
+            <nav class="navbar navbar-dark bg-darkgray">
+              <a class="navbar-brand w40 mr-0" href="index.html"><img src="img/GTM-logo.png" class="w80"></a>
+              <form class="form-inline w60">
+                <input class="form-control w-75" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-primary bg-blue" type="submit"><i class="fas fa-search"></i></button>
+              </form>
+              <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarsExample01">
+                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item active">
                       <a class="nav-link" href="index.html">Inicio</a>
                     </li>
@@ -54,12 +58,7 @@
                       <a class="nav-link" href="visasyembajadas.html">Visas y Embajadas</a>
                     </li>
                   </ul>
-                </div>
-                <div class="form-inline">
-                    <a href="https://www.viajesbojorquez.com.mx/">
-                        <img src="img/bojorquez-logo.png" class="w50 float-right">
-                    </a>
-                </div>
+              </div>-->
             </nav>
         </header>
         <main>
@@ -67,29 +66,20 @@
                 <div class="row w80 mx-auto">
                     <div class="text-justify">
               
-                  <h1 class="text-center">Cookies: qué son, por qué y para qué las usamos.</h1>
-                  <p><b>Nuestros sistemas son incapaces de obtener información personal solo por el hecho de hacer uso de estos.</b> </p>
-                  <p>En la GuiaTuristicaMexico.com usamos <b>cookies</b> propias y de otros proveedores con el fin de mejorar los
+                  <h1 class="text-center">Cookies: qué son, por qué y para qué las usamos.</h1><br>
+                  <p><b  class="bold">Nuestros sistemas son incapaces de obtener información personal solo por el hecho de hacer uso de estos.</b></p>
+                  <p>En la GuiaTuristicaMexico.com usamos <b class="bold">cookies</b> propias y de otros proveedores con el fin de mejorar los
                       contenidos y la experiencia de usuario, de recopilar estadísticas anónimas de uso del mismo y para
                       ofrecer publicidad que tenga que ver con tus intereses.</p>
-                  <h3>Qué son las <b>Cookies</b></h3>
-                  <p>Son pequeños fragmentos de información, completamente anónimos, que el servidor envía a tu navegador cuando
-                      visitas nuestro portal.</p>
-                  <p>Sirven para que el sistema sepa qué páginas has visitado y te ofrezca contenidos relacionados a tus
-                      intereses. Además, nos sirven para proteger las áreas en las que ingresas con contraseña, para que nadie más
-                      pueda acceder a ellas.</p>
+                  <h3>Qué son las <b  class="bold">Cookies</b></h3>
+                  <p>Son pequeños fragmentos de información, completamente anónimos, que el servidor envía a tu navegador cuando visitas nuestro portal.</p>
+                  <p>Sirven para que el sistema sepa qué páginas has visitado y te ofrezca contenidos relacionados a tus intereses. Además, nos sirven para proteger las áreas en las que ingresas con contraseña, para que nadie más pueda acceder a ellas.</p>
                   <p>También permitimos a otros sitios usar cookies acompañados de nuestros sistemas:</p>
-                  <p>Usamos el sistema Google® Analytics® para
-                      recopilar estadísticas de uso a través de cookies, y Google nos permite ver de forma totalmente anónima.
-                  </p>
-                  <p>En el caso del "plug-in social" de Facebook®, las cookies sirven para que puedas publicar comentarios
-                      en muchas de nuestras páginas, así como compartir el contenido en tu muro de Facebook®.
-                  </p>
-                  <p>Al continuar usando los servicios de la GuiaTuristicaMexico.com aceptas que usemos tecnologías avanzadas
-                  como las cookies para proporcionarte una experiencia enriquecedora.</p>
-
-                  <p><a href="https://es.wikipedia.org/wiki/Cookie_%28inform%C3%A1tica%29" target="_blank">Cookies, en Wikipedia®</a>
-                      | <a href="privacia.php" target="_blank">Aviso de privacidad completo de la GTM.</a> </p>
+                  <p>Usamos el sistema Google® Analytics® para recopilar estadísticas de uso a través de cookies, y Google nos permite ver de forma totalmente anónima.</p>
+                  <p>En el caso del "plug-in social" de Facebook®, las cookies sirven para que puedas publicar comentarios en muchas de nuestras páginas, así como compartir el contenido en tu muro de Facebook®.</p>
+                  <p>Al continuar usando los servicios de la GuiaTuristicaMexico.com aceptas que usemos tecnologías avanzadas como las cookies para proporcionarte una experiencia enriquecedora.</p>
+                  <br>
+                  <p><a href="https://es.wikipedia.org/wiki/Cookie_%28inform%C3%A1tica%29" target="_blank"  class="bold">Cookies, en Wikipedia®</a> | <a href="avisoprivacidad.html" target="_blank"  class="bold">Aviso de privacidad completo de la GTM.</a> </p>
   
  
                     </div>
@@ -99,6 +89,40 @@
         <footer>
             <div class="container-fluid bg-darkgray">
                 <div class="row pd2">
+                    <div class="col-12 bg-darkgray">
+
+                        <p class="text-right">
+                          <button class="btn bg-blue" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                             <span class="fas fa-angle-down text-white" aria-hidden="true"></span>
+                          </button>
+                        </p>
+                        <div class="collapse bg-darkgray" id="collapseExample">
+                          <div class="card card-body text-right bg-darkgray pd0">
+                               <nav class="navbar-dark">
+                                <ul class="navbar-nav">
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Inicio</a>
+                                  </li>
+                                  <li class="nav-item">
+                                  <a class="nav-link" href="lada.html">Claves LADA</a>
+                                  </li>
+                                  <li class="nav-item">
+                                  <a class="nav-link" href="cp.html">Códigos Postales</a>
+                                  </li>
+                                  <li class="nav-item">
+                                  <a class="nav-link" href="mapas.html">Mapas</a>
+                                   </li>
+                                  <li class="nav-item">
+                                  <a class="nav-link" href="trazaturuta.html">Traza tu ruta</a>
+                                  </li>
+                                  <li class="nav-item">
+                                  <a class="nav-link" href="visasyembajadas.html">Visas y Embajadas</a>
+                                  </li>
+                                </ul>
+                               </nav>
+                          </div>
+                        </div>
+                    </div>
                     <div class="col-12 col-sm-3">
                         <nav class="navbar-dark">
                             <ul class="navbar-nav">
@@ -110,7 +134,7 @@
                     </div>
                     <div class="col-12 col-sm-6"></div>
                     <div class="col-12 col-sm-3">
-                        <nav class="navbar-dark">
+                        <nav class="navbar-dark text-right">
                             <ul class="navbar-nav">
                               <li class="nav-item">
                                 <a class="nav-link" href="avisoprivacidad.html">Aviso de privacidad</a>
@@ -121,7 +145,7 @@
                               <li class="nav-item">
                                 <a class="nav-link" href="cookies.html">Uso de cookies</a>
                               </li>
-                            </ul>
+                            </ul> 
                         </nav>
                         
                     </div>

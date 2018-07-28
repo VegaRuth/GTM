@@ -10,6 +10,9 @@
         <!--css-->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/utilities.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/mediaqueries.css">
+        <link rel="stylesheet" type="text/css" href="css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
         
         <!--owl_carousel-->
         <!--<link rel="stylesheet" href="css/owl_carousel/docs.theme.min.css">-->
@@ -29,7 +32,41 @@
     
     <body>
         <header class="bg-darkgray">
-            <nav class="navbar navbar-expand-lg navbar-dark mx-auto">
+            <!-- never expand -->
+            <nav class="navbar navbar-dark bg-darkgray">
+              <a class="navbar-brand w40 mr-0" href="index.html"><img src="img/GTM-logo.png" class="w80"></a>
+              <form class="form-inline w60">
+                <input class="form-control w-75" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-primary bg-blue" type="submit"><i class="fas fa-search"></i></button>
+              </form>
+              <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarsExample01">
+                 <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="lada.html">Claves LADA</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="cp.html">Códigos Postales</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="mapas.html">Mapas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="trazaturuta.html">Traza tu ruta</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="visasyembajadas.html">Visas y Embajadas</a>
+                    </li>
+                  </ul>
+              </div>-->
+            </nav>
+
+            <!--<nav class="navbar navbar-expand-lg navbar-dark mx-auto">
                 <a class="navbar-brand" href="index.html"><img src="img/GTM-logo.png" class="w50"></a>
                 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,72 +95,76 @@
                     </li>
                   </ul>
                 </div>
-                <div class="form-inline">
-                    <a href="https://www.viajesbojorquez.com.mx/">
-                        <img src="img/bojorquez-logo.png" class="w50 float-right">
-                    </a>
-                </div>
-            </nav>
+            </nav>-->
         </header>
         <main>
-        <!-- carousel header -->
-           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-              </ol>
+         <!--Que es GTM-->
+            <div class="w100 pd0 mg0" style="background-image:url(img/about.jpg); background-size:cover; background-position:center center;background-repeat:no-repeat;" >
+                <div class="jumbotron" style="background-color: rgba(0,0,0,.4);">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="text-white text-right">Quiénes Somos</h1>
+                            <hr>
+                            <p class="text-white text-right float-right w60">Guía Turística de México, es un sistema de información geográfica, documental, histórica, cultural y de viajes, que "vive" en internet.</p>
+                        </div>
+                        <div class="col-12 pt5 text-center">
+                            <b class="text-white text-center w-100"><h5>Es en resumen MÉXICO TOTAL</h5></b>
+                            <p class="">
+                            <a class="btn btn-lg text-center bg-blue text-white" href="" data-toggle="modal" data-target="#ModalAbout">Ver video</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <!-- carousel header -->
+           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="height:250px;">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img class="d-block w-100" src="img/slider/bajacalifornia-mexicali.jpg" alt="">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>$state</h5>
+                  <img class="d-block w-100" style="height:250px;width:100%;" src="img/slider/bajacalifornia-mexicali.jpg" alt="">
+                  <div class="carousel-caption">
+                    <h5 class="mg0">$state</h5>
                     <p>$title</p>
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="img/slider/bajacalifornia-playasderosarito.jpg" alt="">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>$state</h5>
+                  <img class="d-block w-100" style="height:250px;width:100%;" src="img/slider/bajacalifornia-playasderosarito.jpg" alt="">
+                  <div class="carousel-caption">
+                    <h5 class="mg0">$state</h5>
                     <p>$title</p>
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="img/slider/campeche-champoton.jpg" alt="">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>$state</h5>
+                  <img class="d-block w-100" style="height:250px;width:100%;" src="img/slider/campeche-champoton.jpg" alt="">
+                  <div class="carousel-caption">
+                    <h5 class="mg0">$state</h5>
                     <p>$title</p>
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="img/slider/distritofederal-gustavoamadero.jpg" alt="">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>$state</h5>
+                  <img class="d-block w-100" style="height:250px;width:100%;" src="img/slider/distritofederal-gustavoamadero.jpg" alt="">
+                  <div class="carousel-caption">
+                    <h5 class="mg0">$state</h5>
                     <p>$title</p>
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="img/slider/michoacan-morelia.jpg" alt="">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>$state</h5>
+                  <img class="d-block w-100" style="height:250px;width:100%;" src="img/slider/michoacan-morelia.jpg" alt="">
+                  <div class="carousel-caption">
+                    <h5 class="mg0">$state</h5>
                     <p>$title</p>
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="img/slider/puebla-lamagdalenatlatlauquitepec.jpg" alt="">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>$state</h5>
+                  <img class="d-block w-100" style="height:250px;width:100%;" src="img/slider/puebla-lamagdalenatlatlauquitepec.jpg" alt="">
+                  <div class="carousel-caption">
+                    <h5 class="mg0">$state</h5>
                     <p>$title</p>
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="img/slider/quintanaroo-felipecarrillopuerto.jpg" alt="">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>$state</h5>
+                  <img class="d-block w-100" style="height:250px;width:100%;" src="img/slider/quintanaroo-felipecarrillopuerto.jpg" alt="">
+                  <div class="carousel-caption">
+                    <h5 class="mg0">$state</h5>
                     <p>$title</p>
                   </div>
                 </div>
@@ -143,206 +184,205 @@
                     <h1 class="text-white mx-auto text-center">¡Descubre México Total!</h1>
                 </div>
                 <div class="row">
-                    <form class="form-inline mx-auto">
-                      
+                    <form class="form-inline mx-auto pd5">
                         <div class="form-group row mx-auto">
                             <div class="row  mx-auto">
                                 <div class="col-12 col-sm-4 mx-auto">
-                              <label class="mr-sm-2 text-white" for="">Estado</label>
-                              <select class="custom-select mr-sm-2" id="">
-                                <option selected>Estado</option>
-                                <option value="">Aguascalientes</option>
-                                <option value="">Baja California</option>
-                                <option value="">Baja California Sur</option>
-                                <option value="">Campeche</option>
-                                <option value="">Chiapas</option>
-                                <option value="">Chihuahua</option>
-                                <option value="">Coahuila</option>
-                                <option value="">Colima</option>
-                                <option value="">Ciudad de México</option>
-                                <option value="">Durango</option>
-                                <option value="">Guanajuato</option>
-                                <option value="">Guerrero</option>
-                                <option value="">Hidalgo</option>
-                                <option value="">Jalisco</option>
-                                <option value="">Estado de Méxic</option>o
-                                <option value="">Michoacán</option>
-                                <option value="">Morelos</option>
-                                <option value="">Nayarit</option>
-                                <option value="">Nuevo León</option>
-                                <option value="">Oaxaca</option>
-                                <option value="">Puebla</option>
-                                <option value="">Querétaro</option>
-                                <option value="">Quintana Roo</option>
-                                <option value="">San Luis Potosí</option>
-                                <option value="">Sinaloa</option>
-                                <option value="">Sonora</option>
-                                <option value="">Tabasco</option>
-                                <option value="">Tamaulipas</option>
-                                <option value="">Tlaxcala</option>
-                                <option value="">Veracruz</option>
-                                <option value="">Yucatán</option>
-                                <option value="">Zacatecas</option>
-                              </select>
+                                  <label class="mr-sm-2 text-white" for="">Estado</label>
+                                  <select class="custom-select mr-sm-2" id="">
+                                    <option selected>Estado</option>
+                                    <option value="">Aguascalientes</option>
+                                    <option value="">Baja California</option>
+                                    <option value="">Baja California Sur</option>
+                                    <option value="">Campeche</option>
+                                    <option value="">Chiapas</option>
+                                    <option value="">Chihuahua</option>
+                                    <option value="">Coahuila</option>
+                                    <option value="">Colima</option>
+                                    <option value="">Ciudad de México</option>
+                                    <option value="">Durango</option>
+                                    <option value="">Guanajuato</option>
+                                    <option value="">Guerrero</option>
+                                    <option value="">Hidalgo</option>
+                                    <option value="">Jalisco</option>
+                                    <option value="">Estado de Méxic</option>o
+                                    <option value="">Michoacán</option>
+                                    <option value="">Morelos</option>
+                                    <option value="">Nayarit</option>
+                                    <option value="">Nuevo León</option>
+                                    <option value="">Oaxaca</option>
+                                    <option value="">Puebla</option>
+                                    <option value="">Querétaro</option>
+                                    <option value="">Quintana Roo</option>
+                                    <option value="">San Luis Potosí</option>
+                                    <option value="">Sinaloa</option>
+                                    <option value="">Sonora</option>
+                                    <option value="">Tabasco</option>
+                                    <option value="">Tamaulipas</option>
+                                    <option value="">Tlaxcala</option>
+                                    <option value="">Veracruz</option>
+                                    <option value="">Yucatán</option>
+                                    <option value="">Zacatecas</option>
+                                  </select>
+                                </div>
+                                <div class="col-12 col-sm-4 mx-auto">
+                                  <label class="mr-sm-2 text-white" for="">Municipio</label>
+                                  <select class="custom-select mr-sm-2" id="">
+                                    <option selected>municipio</option>
+                                    <option value="">municipio</option>
+                                    <option value="">municipio</option>
+                                    <option value="">municipio</option>
+                                    <option value="">municipio</option>
+                                    <option value="">municipio</option>
+                                    <option value="">municipio</option>
+                                    <option value="">municipio</option>
+                                    <option value="">municipio</option>
+                                    <option value="">municipio</option>
+                                    <option value="">municipio</option>
+                                    <option value="">municipio</option>
+                                    <option value="">municipio</option>
+                                    <option value="">municipio</option>
+                                    <option value="">municipio</option>
+                                    <option value="">municipio</option>
+                                    <option value="">municipio</option>
+                                    <option value="">municipio</option>
+                                    <option value="">municipio</option>
+                                    <option value="">municipio</option>
+                                    <option value="">municipio</option>
+                                    <option value="">municipio</option>
+                                    <option value="">municipio</option>
+                                    <option value="">municipio</option>
+                                    <option value="">municipio</option>
+                                    <option value="">municipio</option>
+                                    <option value="">municipio</option>
+                                    <option value="">municipio</option>
+                                    <option value="">municipio</option>
+                                    <option value="">municipio</option>
+                                    <option value="">municipio</option>
+                                    <option value="">municipio</option>
+                                    <option value="">municipio</option>
+                                  </select>
+                                </div>
                             </div>
-                            <div class="col-12 col-sm-4 mx-auto">
-                              <label class="mr-sm-2 text-white" for="">Municipio</label>
-                              <select class="custom-select mr-sm-2" id="">
-                                <option selected>municipio</option>
-                                <option value="">municipio</option>
-                                <option value="">municipio</option>
-                                <option value="">municipio</option>
-                                <option value="">municipio</option>
-                                <option value="">municipio</option>
-                                <option value="">municipio</option>
-                                <option value="">municipio</option>
-                                <option value="">municipio</option>
-                                <option value="">municipio</option>
-                                <option value="">municipio</option>
-                                <option value="">municipio</option>
-                                <option value="">municipio</option>
-                                <option value="">municipio</option>
-                                <option value="">municipio</option>
-                                <option value="">municipio</option>
-                                <option value="">municipio</option>
-                                <option value="">municipio</option>
-                                <option value="">municipio</option>
-                                <option value="">municipio</option>
-                                <option value="">municipio</option>
-                                <option value="">municipio</option>
-                                <option value="">municipio</option>
-                                <option value="">municipio</option>
-                                <option value="">municipio</option>
-                                <option value="">municipio</option>
-                                <option value="">municipio</option>
-                                <option value="">municipio</option>
-                                <option value="">municipio</option>
-                                <option value="">municipio</option>
-                                <option value="">municipio</option>
-                                <option value="">municipio</option>
-                                <option value="">municipio</option>
-                              </select>
-                            </div>
-                            </div>
-                            
                         </div>
-                        <div class="form-group row mx-auto">
-                            <button class="btn btn-info mg1">Destinos</button>
-                            <button class="btn btn-info mg1">Sitios de Interés</button>
-                            <button class="btn btn-info mg1">Historia</button>
-                            <button class="btn btn-info mg1">Gastronomía</button>
-                            <button class="btn btn-info mg1">Festivales</button>
-                            <button class="btn btn-info mg1">Zona Arqueológica</button>
-                            <button class="btn btn-info mg1">Cutura</button>
-                            <button class="btn btn-info mg1">Naturaleza</button>
-                            <button class="btn btn-info mg1">Pueblo Mágico</button>
+                        <div class="col-12 col-sm-4 mx-auto">
+                              <label class="mr-sm-2 text-white" for="">Categorías</label>
+                              <select class="custom-select mr-sm-2" id="">
+                                <option>Elige una categoría</option>
+                                <option>Destinos</option>
+                                <option>Sitios de Interés</option>
+                                <option>Historia</option>
+                                <option>Gastronomía</option>
+                                <option>Festivales</option>
+                                <option>Zona Arqueológica</option>
+                                <option>Cutura</option>
+                                <option>Naturaleza</option>
+                                <option>Pueblo Mágico</option>
+                              </select>
                         </div>
-                        
                     </form>
                 </div>
             </div>
+            
             <!-- Lo más nuevo  -->
-                <section id="demos">
-                  <div class="container pd2 mx-auto">
-                    <div class="row pd2">
-                        <h3 class="text-blue">Lo más nuevo</h3>
-                    </div>
-                    <div class="row pd1">
-                      <div class="owl-carousel owl-theme">
+            <section id="demos">
+              <div class="container pd2 mx-auto">
+                <div class="row pd2">
+                    <h3 class="text-blue">Lo más nuevo</h3>
+                </div>
+                <div class="row pd1">
+                  <div class="owl-carousel owl-theme">
 
-                            <div class="item">
-                                <a href="state.html">
-                                    <img src="img/state/GTM.mx_150913205747.jpg" class="img-fluid" style="height:230px;">
-                                    <div class="bg-blue pd2">
-                                        <h4 class="text-white">Quintana Roo</h4>
-                                        <p class="text-white">La región que ahora ocupa...</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="item">
-                                <a href="#">
-                                    <img src="img/state/GTM.mx_150715002920.jpg" class="img-fluid" style="height:230px;">
-                                    <div class="bg-blue pd2">
-                                        <h4 class="text-white">$title</h4>
-                                        <p class="text-white">$short_description</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="item">
-                                <a href="#">
-                                    <img src="img/state/GTM.mx_150823201123.jpg" class="img-fluid" style="height:230px;">
-                                    <div class="bg-blue pd2">
-                                        <h4 class="text-white">$title</h4>
-                                        <p class="text-white">$short_description</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="item">
-                                <a href="#">
-                                    <img src="img/state/GTM.mx_151008151157.jpg" class="img-fluid" style="height:230px;">
-                                    <div class="bg-blue pd2">
-                                        <h4 class="text-white">$title</h4>
-                                        <p class="text-white">$short_description</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="item">
-                                <a href="#">
-                                    <img src="img/state/GTM.mx_150905153434.jpg" class="img-fluid" style="height:230px;">
-                                    <div class="bg-blue pd2">
-                                        <h4 class="text-white">$title</h4>
-                                        <p class="text-white">$short_description</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="item">
-                                <a href="#">
-                                    <img src="img/state/GTM.mx_151010020602.jpg" class="img-fluid" style="height:230px;">
-                                    <div class="bg-blue pd2">
-                                        <h4 class="text-white">$title</h4>
-                                        <p class="text-white">$short_description</p>
-                                    </div>
-                                </a>
-                            </div>
+                        <div class="item">
+                            <a href="state.html">
+                                <img src="img/state/GTM.mx_150913205747.jpg" class="img-fluid" style="height:230px;">
+                                <div class="bg-blue pd2">
+                                    <h4 class="text-white">Quintana Roo</h4>
+                                    <p class="text-white">La región que ahora ocupa...</p>
+                                </div>
+                            </a>
                         </div>
-                            <script>
-                                $(document).ready(function() {
-                                  $('.owl-carousel').owlCarousel({
-                                    loop: true,
-                                    margin: 10,
-                                    responsiveClass: true,
-                                    responsive: {
-                                      0: {
-                                        items: 1,
-                                        loop: true,
-                                        nav: true
-                                      },
-                                      600: {
-                                        items: 3,
-                                        nav: false,
-                                        loop: true
-                                      },
-                                      1000: {
-                                        items: 2,
-                                        nav: true,
-                                        loop: true,
-                                        margin: 20
-                                      }
-                                    }
-                                  })
-                                });
-                            </script>
 
-                      
+                        <div class="item">
+                            <a href="#">
+                                <img src="img/state/GTM.mx_150715002920.jpg" class="img-fluid" style="height:230px;">
+                                <div class="bg-blue pd2">
+                                    <h4 class="text-white">$title</h4>
+                                    <p class="text-white">$short_description</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="#">
+                                <img src="img/state/GTM.mx_150823201123.jpg" class="img-fluid" style="height:230px;">
+                                <div class="bg-blue pd2">
+                                    <h4 class="text-white">$title</h4>
+                                    <p class="text-white">$short_description</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="#">
+                                <img src="img/state/GTM.mx_151008151157.jpg" class="img-fluid" style="height:230px;">
+                                <div class="bg-blue pd2">
+                                    <h4 class="text-white">$title</h4>
+                                    <p class="text-white">$short_description</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="#">
+                                <img src="img/state/GTM.mx_150905153434.jpg" class="img-fluid" style="height:230px;">
+                                <div class="bg-blue pd2">
+                                    <h4 class="text-white">$title</h4>
+                                    <p class="text-white">$short_description</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="#">
+                                <img src="img/state/GTM.mx_151010020602.jpg" class="img-fluid" style="height:230px;">
+                                <div class="bg-blue pd2">
+                                    <h4 class="text-white">$title</h4>
+                                    <p class="text-white">$short_description</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                  </div>
-                </section>
-
+                        <script>
+                            $(document).ready(function() {
+                              $('.owl-carousel').owlCarousel({
+                                loop: true,
+                                margin: 10,
+                                responsiveClass: true,
+                                responsive: {
+                                  0: {
+                                    items: 1,
+                                    loop: true,
+                                    nav: true
+                                  },
+                                  600: {
+                                    items: 1,
+                                    nav: false,
+                                    loop: true
+                                  },
+                                  1000: {
+                                    items: 1,
+                                    nav: true,
+                                    loop: true,
+                                    margin: 20
+                                  }
+                                }
+                              })
+                            });
+                        </script>
+                </div>
+              </div>
+            </section>
 
             <!-- Muestra categorías -->
             <div class="container pd2">
@@ -351,9 +391,9 @@
                 </div>
                 <div class="row">
 
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-12  pt2 pb2">
+                    <div class="col-12  pt2 pb2">
                         <div class="hovereffect">
-                            <img class="img-fluid" src="img/categories/GTM.mx_150723125801.jpg" alt="">
+                            <img class="img-fluid w-100" src="img/categories/GTM.mx_150723125801.jpg" alt="">
                             <div class="overlay">
                                <h2>Destinos</h2>
                                <a class="info" href="#">Ver más</a>
@@ -361,9 +401,9 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 pt2 pb2">
+                    <div class="col-12 pt2 pb2">
                         <div class="hovereffect">
-                            <img class="img-fluid" src="img/categories/GTM.mx_160323205830.jpg" alt="">
+                            <img class="img-fluid w-100" src="img/categories/GTM.mx_160323205830.jpg" alt="">
                             <div class="overlay">
                                <h2>Cultura</h2>
                                <a class="info" href="#">Ver más</a>
@@ -371,9 +411,9 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 pt2 pb2">
+                    <div class="col-12 pt2 pb2">
                         <div class="hovereffect">
-                            <img class="img-fluid" src="img/categories/GTM.mx_160730073400.jpg" alt="">
+                            <img class="img-fluid w-100" src="img/categories/GTM.mx_160730073400.jpg" alt="">
                             <div class="overlay">
                                <h2>Pueblos Mágicos</h2>
                                <a class="info" href="#">Ver más</a>
@@ -381,9 +421,9 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 pt2 pb2">
+                    <div class="col-12 pt2 pb2">
                         <div class="hovereffect">
-                            <img class="img-fluid" src="img/categories/GTM.mx_170112021627.jpg" alt="">
+                            <img class="img-fluid w-100" src="img/categories/GTM.mx_170112021627.jpg" alt="">
                             <div class="overlay">
                                <h2>Gastronomía</h2>
                                <a class="info" href="#">Ver más</a>
@@ -391,9 +431,9 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 pt2 pb2">
+                    <div class="col-12 pt2 pb2">
                         <div class="hovereffect">
-                            <img class="img-fluid" src="img/categories/GTM.mx_180105175412.jpg" alt="">
+                            <img class="img-fluid w-100" src="img/categories/GTM.mx_180105175412.jpg" alt="">
                             <div class="overlay">
                                <h2>Festivales</h2>
                                <a class="info" href="#">Ver más</a>
@@ -401,9 +441,9 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 pt2 pb2">
+                    <div class="col-12 pt2 pb2">
                         <div class="hovereffect">
-                            <img class="img-fluid" src="img/categories/GTM.mx_180205181830.jpg" alt="">
+                            <img class="img-fluid w-100" src="img/categories/GTM.mx_180205181830.jpg" alt="">
                             <div class="overlay">
                                <h2>Naturaleza</h2>
                                <a class="info" href="#">Ver más</a>
@@ -411,9 +451,9 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 pt2 pb2">
+                    <div class="col-12 pt2 pb2">
                         <div class="hovereffect">
-                            <img class="img-fluid" src="img/categories/GTM.mx_180402155757.jpg" alt="">
+                            <img class="img-fluid w-100" src="img/categories/GTM.mx_180402155757.jpg" alt="">
                             <div class="overlay">
                                <h2>Sitios de interés</h2>
                                <a class="info" href="#">Ver más</a>
@@ -421,9 +461,9 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 pt2 pb2">
+                    <div class="col-12 pt2 pb2">
                         <div class="hovereffect">
-                            <img class="img-fluid" src="img/categories/GTM.mx_180414163741.jpg" alt="">
+                            <img class="img-fluid w-100" src="img/categories/GTM.mx_180414163741.jpg" alt="">
                             <div class="overlay">
                                <h2>Zona Arqueológica</h2>
                                <a class="info" href="#">Ver más</a>
@@ -431,9 +471,9 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 pt2 pb2">
+                    <div class="col-12 pt2 pb2">
                         <div class="hovereffect">
-                            <img class="img-fluid" src="img/categories/GTM.mx_180508174641.jpg" alt="">
+                            <img class="img-fluid w-100" src="img/categories/GTM.mx_180508174641.jpg" alt="">
                             <div class="overlay">
                                <h2>Historia</h2>
                                <a class="info" href="#">Ver más</a>
@@ -444,10 +484,94 @@
 
                 </div>
             </div>
+
+            <!-- Filtros-->
+            <div class="container-fluid pd5 mx-auto bg-lightblue">
+                <div class="row">
+                    <h3 class="text-blue mx-auto text-center">Contacto</h3>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <form class="text-blue bold w80 mx-auto">
+                          <div class="form-group">
+                            <label for="">Nombre</label>
+                            <input type="text" class="form-control" id="name" placeholder="">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Apellidos</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Teléfono</label>
+                            <input type="text" class="form-control" id="telephone" placeholder="">
+                          </div>
+                          <div class="form-group">
+                            <label for="">Correo electrónico</label>
+                            <input type="email" class="form-control" id="Email" placeholder="">
+                          </div>                        
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Mensaje</label>
+                            <input type="text" class="form-control" id="message" placeholder="">
+                          </div>
+                          <button type="submit" class="btn btn-lg bg-blue text-white float-right">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade  bd-example-modal-lg" id="ModalAbout" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+              <div class="modal-dialog  modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header bg-darkgray">
+                    <h5 class="modal-title" id="exampleModalLabel"><img src="img/GTM-logo.png" class="w40"></h5>
+                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/GA01lRMY8ZM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
         </main>
         <footer>
             <div class="container-fluid bg-darkgray">
                 <div class="row pd2">
+                    <div class="col-12 bg-darkgray">
+
+                        <p class="text-right">
+                          <button class="btn bg-blue" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                             <span class="fas fa-angle-down text-white" aria-hidden="true"></span>
+                          </button>
+                        </p>
+                        <div class="collapse bg-darkgray" id="collapseExample">
+                          <div class="card card-body text-right bg-darkgray pd0">
+                               <nav class="navbar-dark">
+                                <ul class="navbar-nav">
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Inicio</a>
+                                  </li>
+                                  <li class="nav-item">
+                                  <a class="nav-link" href="lada.html">Claves LADA</a>
+                                  </li>
+                                  <li class="nav-item">
+                                  <a class="nav-link" href="cp.html">Códigos Postales</a>
+                                  </li>
+                                  <li class="nav-item">
+                                  <a class="nav-link" href="mapas.html">Mapas</a>
+                                   </li>
+                                  <li class="nav-item">
+                                  <a class="nav-link" href="trazaturuta.html">Traza tu ruta</a>
+                                  </li>
+                                  <li class="nav-item">
+                                  <a class="nav-link" href="visasyembajadas.html">Visas y Embajadas</a>
+                                  </li>
+                                </ul>
+                               </nav>
+                          </div>
+                        </div>
+                    </div>
                     <div class="col-12 col-sm-3">
                         <nav class="navbar-dark">
                             <ul class="navbar-nav">
@@ -459,7 +583,7 @@
                     </div>
                     <div class="col-12 col-sm-6"></div>
                     <div class="col-12 col-sm-3">
-                        <nav class="navbar-dark">
+                        <nav class="navbar-dark text-right">
                             <ul class="navbar-nav">
                               <li class="nav-item">
                                 <a class="nav-link" href="avisoprivacidad.html">Aviso de privacidad</a>
